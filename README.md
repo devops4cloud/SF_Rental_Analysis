@@ -1,37 +1,37 @@
 <img src="">
 
 
-The applicaiton helps evaluate the real-estate market of San Francisco from year 2012-2016.
+Proptech, the application of technology to real-estate markets, is an innovative domain in the fintech industry. The applicaiton helps evaluate the real-estate market of San Francisco from year 2012-2016. This application uses interactive visualizations, and geospatial analysis, to find properties in the San Francisco market that are viable investment opportunities. It calculates the following for the SF realestatate market.
+
+- Housing unit trend analysis
+- Sale prices per Sqft analysis
+- Average grost rent analysis 
+- Sale price per sqft and gross rent analysis per SF neighbourhood
 
 
-The application  the current financial data related to cryptocurrenies, stocks, and bond market using API. The application gets the latest data from API calls to Alpaca and Alternative.me. Application also runs Monte Carlo simulation to analayse the future returns of the portfolio.
+All this data is analyzed using Pandas hvplot library
 
 ---
 
 
-## Sources
-
-Alpaca - https://github.com/alpacahq/alpaca-py <br>
-Crypto - https://api.alternative.me/ <br>
-
-
 ## Output
 
-- The application outputs simulation projected returns and the distributions
+- The application outputs the following graphs 
 
 
-#### 30 Year Return - Simulation
-<img src="./Images/30_Year_Simulation.png">
-
-#### 30 Year Return - Distribution
-<img src="./Images/30_Year_Distribution.png">
+#### Housing per year
+<img src="./Images/zoomed-housing-units-by-year.png">
 
 
-#### 10 Year Return - Simulation
-<img src="./Images/10_Year_Simulation.png">
+#### Average Sale price per Sqft and Gross Rent
+<img src="./Images/avg-sale-px-sq-foot-gross-rent.png">
 
-#### 10 Year Return - Distribution
-<img src="./Images/10_Year_Distribution.png">
+
+#### Pricing Info by SF Neighborhood
+<img src="./Images/pricing-info-by-neighborhood.png">
+
+#### Geoview plot 
+<img src="./Images/6-4-geoviews-plot.png">
 
 ---
 
@@ -39,12 +39,11 @@ Crypto - https://api.alternative.me/ <br>
 
 The program is based on Python 3 and require the following libraries/packages to function
 
+Jupyter Lab
+JupyterLab is a web-based user interface designed for data analysis. It lets you write and run Python programs and then review the results—all in a single integrated development environment (IDE). JupyterLab works in association with the Anaconda distribution and the Conda package manager. You launch it from Terminal or Git Bash, and it then opens in a web browser window.
 
-- Alpaca-py (API key is required for Alpaca access. Need to create an account)
-- Pandas
-- Numpy
-- load_dotenv
-- Montecarlo Simulations
+Pandas
+Pandas is included when you use the Anaconda distribution and Conda package manager to manage your Python environments.
 
 ---
 
@@ -56,7 +55,7 @@ The user of the application will have to download Python,   Python package manag
    - [How to install PIP ](https://pip.pypa.io/en/stable/installation/) 
    - [How to install Git ](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) 
    
-   
+
 
 ---
 
@@ -65,15 +64,11 @@ The user of the application will have to download Python,   Python package manag
 To use the application, follow the steps below.
 
 1. Download the files from Github
-    > mkdir portfolio <br>
-    > git clone https://github.com/devops4cloud/financial_portfolio_analysis/ <br>
-    > cd portfolio
-
-2.  Create a .env file on the folder for the project and store the alpaca API keys
-    > alpaca_api_key={key} <br>
-    > alpaca_secret_key={secret_key} <br>
+    > mkdir rentanalysis <br>
+    > git clone https://github.com/devops4cloud/SF_Rental_Analysis <br>
+    > cd rentanalysis
    
-3. Run the notebook finance_planning_tools.ipynb
+2. Run the notebook san_francisco_housing.ipynb
 
 
 ---
