@@ -1,4 +1,4 @@
-<img src="">
+<img src="./Images/Real-Estate-Industry.jpg">
 
 
 Proptech, the application of technology to real-estate markets, is an innovative domain in the fintech industry. The applicaiton helps evaluate the real-estate market of San Francisco from year 2012-2016. This application uses interactive visualizations, and geospatial analysis, to find properties in the San Francisco market that are viable investment opportunities. It calculates the following for the SF realestatate market.
